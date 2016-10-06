@@ -1,7 +1,7 @@
 FROM centos:7
 MAINTAINER manjula@thinkcube.com
 
-RUN yum install https://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-8.noarch.rpm -y && yum clean all
+RUN yum install epel-release -y && yum clean all
 
 RUN yum install python-pip -y && yum clean all
 
