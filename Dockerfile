@@ -14,4 +14,4 @@ EXPOSE 8000
 
 WORKDIR /home/user
 
-CMD ["mkdocs", "serve", "--no-livereload", "-a", "0.0.0.0:8000"]
+CMD ["mkdocs", "serve", "-a", "0.0.0.0:80"]
