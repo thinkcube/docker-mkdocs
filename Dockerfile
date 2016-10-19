@@ -10,8 +10,8 @@ RUN pip install mkdocs
 RUN useradd --shell /bin/bash -u 1000 -o -c "" -m user \
  && usermod -aG root user
 
-EXPOSE 8000 35729
+EXPOSE 80 35729
 
 WORKDIR /home/user
 
-CMD ["mkdocs", "serve", "-a", "0.0.0.0:8000"]
+CMD ["mkdocs", "serve", "-a", "0.0.0.0:80"]
