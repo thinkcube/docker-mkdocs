@@ -14,13 +14,13 @@
 
 - do your thing and populate the documents
 
-`docker run -d -v ~/my_test_project:/home/user -u user -p 8092:80 thinkcube/mkdocs`
+`docker run -d -v ~/my_test_project:/home/user -p 8092:80 thinkcube/mkdocs`
 
 - access: `127.0.0.1:8092`
 
 ### Exsisting project
 
-`docker run -d -v ~/my_test_project:/home/user -u user -p 8092:80 thinkcube/mkdocs`
+`docker run -d -v ~/my_exsisting_project:/home/user -p 8092:80 thinkcube/mkdocs`
 
 access: `127.0.0.1:8092`
 

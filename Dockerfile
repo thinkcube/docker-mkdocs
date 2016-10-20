@@ -7,10 +7,10 @@ RUN yum install python-pip -y && yum clean all
 
 RUN pip install mkdocs
 
-RUN useradd --shell /bin/bash -u 1000 -o -c "" -m user \
+RUN useradd --shell /bin/bash -d /home/user -u 1000 -o -c "" -m user \
  && usermod -aG root user
 
-EXPOSE 80 35729
+EXPOSE 80
 
 WORKDIR /home/user
 
